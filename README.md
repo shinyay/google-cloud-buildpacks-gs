@@ -5,6 +5,8 @@ Containerized Spring Music Application
 ## Description
 This is a Spring Music Application containerized with Distroless Java Runtime.
 
+- [spring-music-container:latest](https://hub.docker.com/repository/docker/shinyay/spring-music-container)
+
 ## Demo
 
 ## Features
