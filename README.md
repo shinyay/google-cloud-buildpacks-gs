@@ -1,8 +1,9 @@
-# Name
+# Spring Music Container
 
-Overview
+Containerized Spring Music Application
 
 ## Description
+This is a Spring Music Application containerized with Distroless Java Runtime.
 
 ## Demo
 
