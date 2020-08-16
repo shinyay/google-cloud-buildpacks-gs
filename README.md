@@ -14,8 +14,8 @@ $ docker run -p 8080:8080 --name spring-music shinyay/spring-music-container
 
 ## Features
 
-- feature:1
-- feature:2
+- Distroless Java
+- Multi-stage Build
 
 ## Requirement
 
