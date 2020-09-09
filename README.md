@@ -10,9 +10,14 @@ This is a Spring Music Application containerized with Distroless Java Runtime.
 ## Demo
 
 ### Local Container Build & Run
+#### 1. Build Container Image
+```
+$ docker build -t shinyay/spring-app .
+```
+
 #### 2. Run Container App
 ```shell script
-$ docker run --rm -d -p 8080:8080 --name spring-music shinyay/spring-music-container
+$ docker run --rm -d -p 8080:8080 --name spring-app shinyay/spring-app
 ```
 
 ## Features
