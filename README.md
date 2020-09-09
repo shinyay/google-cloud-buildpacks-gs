@@ -52,6 +52,10 @@ $ gcloud beta builds triggers create cloud-source-repositories \
     --build-config=cloudbuild.yaml
 ```
 
+```
+$ gcloud beta builds triggers list
+```
+
 ## Features
 
 - Distroless Java
