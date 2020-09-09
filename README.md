@@ -61,6 +61,11 @@ Edit some source code and commit & push.
 
 - [Cloud Build Dashboard](https://console.cloud.google.com/cloud-build)
 
+#### (Option) Run Trigger by manual
+```
+$ gcloud beta builds triggers run <TRIGGER_NAME> --branch master
+```
+
 ## Features
 
 - Distroless Java
