@@ -1,3 +1,4 @@
+## Build Phase
 FROM gradle:6.6.1-jdk11 as java-build
 WORKDIR /app/
 COPY --chown=gradle:gradle . .
@@ -8,6 +9,7 @@ RUN mkdir -p build/libs/dependency && (cd build/libs/dependency; jar -xf ../*.ja
 # Non-root user
 RUN adduser --system --home /var/cache/bootapp --shell /sbin/nologin bootapp;
 
+## Package Phase
 FROM gcr.io/distroless/java:11
 ARG DEPENDENCY=/app/build/libs/dependency
 COPY --from=java-build ${DEPENDENCY}/BOOT-INF/lib /app/lib
