@@ -56,6 +56,9 @@ $ gcloud beta builds triggers create cloud-source-repositories \
 $ gcloud beta builds triggers list
 ```
 
+#### Run Trigger
+Edit some source code and commit & push.
+
 ## Features
 
 - Distroless Java
