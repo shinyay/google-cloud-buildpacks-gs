@@ -59,6 +59,8 @@ $ gcloud beta builds triggers list
 #### Run Trigger
 Edit some source code and commit & push.
 
+- [Cloud Build Dashboard](https://console.cloud.google.com/cloud-build)
+
 ## Features
 
 - Distroless Java
