@@ -20,6 +20,12 @@ $ docker build -t shinyay/spring-app .
 $ docker run --rm -d -p 8080:8080 --name spring-app shinyay/spring-app
 ```
 
+### Build on Cloud Build
+#### Create Source Repository
+```
+$ gcloud source repos create spring-app-repo
+```
+
 ## Features
 
 - Distroless Java
