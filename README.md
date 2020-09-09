@@ -21,6 +21,13 @@ $ docker run --rm -d -p 8080:8080 --name spring-app shinyay/spring-app
 ```
 
 ### Build on Cloud Build
+#### (Option) Register SSH Key
+- Cloud Source Repositories
+  - Manage SSH Keys
+    - Register SSH Key
+
+![register-ssh](https://user-images.githubusercontent.com/3072734/92601920-5f188b80-f2e8-11ea-8566-5f5e40d6d66f.png)
+
 #### Create Source Repository
 ```
 $ gcloud source repos create spring-app-repo
