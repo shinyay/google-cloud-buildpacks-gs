@@ -1,4 +1,4 @@
-FROM gradle:6.5.1-jdk11 as java-build
+FROM gradle:6.6.1-jdk11 as java-build
 WORKDIR /app/
 COPY --chown=gradle:gradle . .
 RUN gradle assemble --no-daemon
