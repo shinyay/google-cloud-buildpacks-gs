@@ -26,6 +26,13 @@ $ docker run --rm -d -p 8080:8080 --name spring-app shinyay/spring-app
 $ gcloud source repos create spring-app-repo
 ```
 
+```
+$ gcloud source repos list
+REPO_NAME        PROJECT_ID                   URL
+spring-app-repo  shinyay-build-999999-000000  https://source.developers.google.com/p/shinyay-build-999999-000000/r/spring-app-repo
+
+```
+
 ## Features
 
 - Distroless Java
