@@ -44,6 +44,14 @@ spring-app-repo  shinyay-build-999999-000000  https://source.developers.google.c
 $ git remote add google ssh://<USER_ID>@source.developers.google.com:2022/p/shinyay-works-999999-000000/r/spring-app-repo
 ```
 
+#### Create Trigger for Building app
+```
+$ gcloud beta builds triggers create cloud-source-repositories \
+    --repo=spring-app-repo \
+    --branch-pattern=".*" \
+    --build-config=cloudbuild.yaml
+```
+
 ## Features
 
 - Distroless Java
