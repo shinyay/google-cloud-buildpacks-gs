@@ -84,7 +84,7 @@ $ pack build shinyay/demo-app:0.0.1 --builder gcr.io/buildpacks/builder:v1 --pub
 ```
 $ pack build gcr.io/<GCP_PROJECT_NAME>/<NAME>:<TAG> --builder gcr.io/buildpacks/builder:v1 --publish
 
-$ pack build gcr.io/shinyay-demo-project/demo-app:0.0.1 --builder gcr.io/buildpacks/builder:v1 --publish
+$ pack build gcr.io/(gcloud config get-value project)/demo-app:0.0.1 --builder gcr.io/buildpacks/builder:v1 --publish
 ```
 
 #### Usage - Google Cloud Build
