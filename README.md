@@ -3,6 +3,15 @@
 Google Cloud Buildpacks enables you to create Cpntainer images without **Dockerfile**
 
 ## Description
+### pack CLI
+Pack is a tool maintained by the Cloud Native Buildpacks project to support the use of buildpacks. It enables the following functionality:
+
+1. `build` an application
+2. `rebase` application created images
+3. Creation of various `components` used within the ecosystem.
+
+
+
 
 ## Demo
 
