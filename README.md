@@ -37,8 +37,19 @@ $ docker run \
 Generate container image from source code
 
 ```
-$ ack build <IMAGE_NAME> [OPTIONS]
+$ pack build <IMAGE_NAME> [OPTIONS]
 ```
+
+|Option|Explanation|
+|------|-----------|
+|-B, --builder|Builder Image|
+|-b, --buildpack|Buildpack reference in the form of '<buildpack>@<version>'|
+|--clear-cache|Clear image's associated cache|
+|||
+|||
+|||
+|||
+|||
 
 #####
 
