@@ -32,7 +32,7 @@ $ docker run \
     buildpacksio/pack build <IMAGE_NAME> --builder <BUILDER_IMAGE>
 ```
 
-#### Usage
+#### Usage - pack cli
 ##### Build
 Generate container image from source code
 
@@ -85,6 +85,15 @@ $ pack build shinyay/demo-app:0.0.1 --builder gcr.io/buildpacks/builder:v1 --pub
 $ pack build gcr.io/<GCP_PROJECT_NAME>/<NAME>:<TAG> --builder gcr.io/buildpacks/builder:v1 --publish
 
 $ pack build gcr.io/shinyay-demo-project/demo-app:0.0.1 --builder gcr.io/buildpacks/builder:v1 --publish
+```
+
+#### Usage - Google Cloud Build
+Google Cloud Build process can invoke Google Cloud Buildpacks
+
+```
+$ gcloud alpha builds submit --pack image=gcr.io/(gcloud config get-value project)/<NAME>
+
+$ gcloud alpha builds submit --pack image=gcr.io/(gcloud config get-value project)/demo-app
 ```
 
 ## Demo
