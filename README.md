@@ -45,11 +45,11 @@ $ pack build <IMAGE_NAME> [OPTIONS]
 |-B, --builder|Builder Image|
 |-b, --buildpack|Buildpack reference in the form of '<buildpack>@<version>'|
 |--clear-cache|Clear image's associated cache|
-|||
-|||
-|||
-|||
-|||
+|-e, --env|Build-time environment variable, in the form 'VAR=VALUE' or 'VAR'.|
+|--env-file|Build-time environment variables file (defaults to current working directory)|
+|-p, --path|Path to app |
+|--publish|Publish to registry|
+|--pull-policy|always (defaukt)<br>never<br>if-not-present|
 
 ##### Builder
 |Name|Builder Name|Explanation|
