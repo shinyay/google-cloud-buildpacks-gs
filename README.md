@@ -29,8 +29,18 @@ You need to mount your local Docker daemon's socket when you use it as a contain
 $ docker run \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v $PWD:/workspace -w /workspace \
-    buildpacksio/pack build <my-image> --builder <builder-image>
+    buildpacksio/pack build <IMAGE_NAME> --builder <BUILDER_IMAGE>
 ```
+
+#### Usage
+##### Build
+Generate container image from source code
+
+```
+$ ack build <IMAGE_NAME> [OPTIONS]
+```
+
+#####
 
 ## Demo
 
