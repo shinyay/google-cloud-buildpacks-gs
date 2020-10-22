@@ -49,7 +49,7 @@ $ pack build <IMAGE_NAME> [OPTIONS]
 |--env-file|Build-time environment variables file (defaults to current working directory)|
 |-p, --path|Path to app |
 |--publish|Publish to registry|
-|--pull-policy|always (defaukt)<br>never<br>if-not-present|
+|--pull-policy|always (default)<br>never<br>if-not-present|
 |--volume|Mount host volume into the build container<br>'\<host path\>:\<target path\>[:\<mode\>]'|
 
 ##### Builder
@@ -69,7 +69,19 @@ Rebase app image with latest run image
 $ pack rebase <IMAGE_NAME> [OPTIONS]
 ```
 
-#####
+##### Publish to Registry
+
+- Publish to **Docker Hub**
+
+```
+$ pack build <REGISRY_NAME>/<NAME>:<TAG> --builder gcr.io/buildpacks/builder:v1 --publish
+
+$ pack build shinyay/demo-app:0.0.1 --builder gcr.io/buildpacks/builder:v1 --publish
+```
+
+```
+```
+
 
 ## Demo
 
