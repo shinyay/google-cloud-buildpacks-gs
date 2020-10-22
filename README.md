@@ -50,7 +50,7 @@ $ pack build <IMAGE_NAME> [OPTIONS]
 |-p, --path|Path to app |
 |--publish|Publish to registry|
 |--pull-policy|always (defaukt)<br>never<br>if-not-present|
-|--volume|Mount host volume into the build container<br>'<host path>:<target path>[:<mode>]'|
+|--volume|Mount host volume into the build container<br>'\<host path\>:\<target path\>[:\<mode\>]'|
 
 ##### Builder
 |Name|Builder Name|Explanation|
