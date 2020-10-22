@@ -16,6 +16,19 @@ Pack is a tool maintained by the Cloud Native Buildpacks project to support the 
 brew install buildpacks/tap/pack
 ```
 
+##### Container
+`pack` is available as a container image from `buildpacksio/pack`
+
+- buildpacksio/pack:latest
+or
+- buildpacksio/pack:0.14.2
+
+```
+$ docker run \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v $PWD:/workspace -w /workspace \
+    buildpacksio/pack build <my-image> --builder <builder-image>
+```
 
 ## Demo
 
