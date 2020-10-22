@@ -89,6 +89,8 @@ $ pack build gcr.io/shinyay-demo-project/demo-app:0.0.1 --builder gcr.io/buildpa
 
 ## Demo
 
+![CNB-DEMO](images/cnb.gif)
+
 ## Features
 
 - feature:1
