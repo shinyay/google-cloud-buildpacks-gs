@@ -10,7 +10,11 @@ Pack is a tool maintained by the Cloud Native Buildpacks project to support the 
 2. `rebase` application created images
 3. Creation of various `components` used within the ecosystem.
 
-
+#### Installation
+##### MacOS - Homebrew
+```
+brew install buildpacks/tap/pack
+```
 
 
 ## Demo
