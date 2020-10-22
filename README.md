@@ -50,6 +50,7 @@ $ pack build <IMAGE_NAME> [OPTIONS]
 |-p, --path|Path to app |
 |--publish|Publish to registry|
 |--pull-policy|always (defaukt)<br>never<br>if-not-present|
+|--volume|Mount host volume into the build container<br>'<host path>:<target path>[:<mode>]'|
 
 ##### Builder
 |Name|Builder Name|Explanation|
@@ -59,6 +60,14 @@ $ pack build <IMAGE_NAME> [OPTIONS]
 |Paketo Buildpacks|paketobuildpacks/builder:base|Ubuntu bionic base image with buildpacks for Java, NodeJS and Golang|
 |Paketo Buildpacks|paketobuildpacks/builder:full|Ubuntu bionic base image with buildpacks for Java, .NET, NodeJS, Golang, PHP, HTTPD and NGINX|
 |Paketo Buildpacks|paketobuildpacks/builder:tiny|Tiny base image (bionic build image, distroless run image) with buildpacks for Golang|
+
+##### Rebase
+
+Rebase app image with latest run image
+
+```
+$ pack rebase <IMAGE_NAME> [OPTIONS]
+```
 
 #####
 
