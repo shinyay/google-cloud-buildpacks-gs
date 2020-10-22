@@ -51,6 +51,15 @@ $ pack build <IMAGE_NAME> [OPTIONS]
 |||
 |||
 
+##### Builder
+|Name|Builder Name|Explanation|
+|----|------------|-----------|
+|Google|gcr.io/buildpacks/builder:v1|Ubuntu 18 base image with buildpacks for .NET, Go, Java, Node.js, and Python|
+|Heroku|heroku/buildpacks:18|heroku-18 base image with buildpacks for Ruby, Java, Node.js, Python, Golang, & PHP|
+|Paketo Buildpacks|paketobuildpacks/builder:base|Ubuntu bionic base image with buildpacks for Java, NodeJS and Golang|
+|Paketo Buildpacks|paketobuildpacks/builder:full|Ubuntu bionic base image with buildpacks for Java, .NET, NodeJS, Golang, PHP, HTTPD and NGINX|
+|Paketo Buildpacks|paketobuildpacks/builder:tiny|Tiny base image (bionic build image, distroless run image) with buildpacks for Golang|
+
 #####
 
 ## Demo
