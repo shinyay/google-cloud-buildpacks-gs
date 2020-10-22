@@ -23,6 +23,8 @@ brew install buildpacks/tap/pack
 or
 - buildpacksio/pack:0.14.2
 
+You need to mount your local Docker daemon's socket when you use it as a container.
+
 ```
 $ docker run \
     -v /var/run/docker.sock:/var/run/docker.sock \
