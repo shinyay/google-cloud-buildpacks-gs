@@ -104,7 +104,12 @@ Google Cloud Build process can invoke Google Cloud Buildpacks
 
 Default Builder: `gcr.io/buildpacks/builder`
 ```
-$ gcloud  builds submit --pack image=gcr.io/(gcloud config get-value project)/<NAME>:<TAG>
+$ gcloud builds submit --pack image=gcr.io/(gcloud config get-value project)/<NAME>:<TAG>
+```
+
+Paketo Builder: `gcr.io/buildpacks/builder`
+```
+$ gcloud builds submit builder=paketobuildpacks/builder:full,image=gcr.io/(gcloud config get-value project)/<NAME>:<TAG>
 ```
 
 ## Installation
