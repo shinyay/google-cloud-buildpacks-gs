@@ -87,15 +87,6 @@ $ pack build gcr.io/<GCP_PROJECT_NAME>/<NAME>:<TAG> --builder gcr.io/buildpacks/
 $ pack build gcr.io/(gcloud config get-value project)/demo-app:0.0.1 --builder gcr.io/buildpacks/builder:v1 --publish
 ```
 
-#### Usage - Google Cloud Build
-Google Cloud Build process can invoke Google Cloud Buildpacks
-
-```
-$ gcloud alpha builds submit --pack image=gcr.io/(gcloud config get-value project)/<NAME>
-
-$ gcloud alpha builds submit --pack image=gcr.io/(gcloud config get-value project)/demo-app
-```
-
 ## Demo
 
 ![CNB-DEMO](images/cnb.gif)
@@ -108,6 +99,13 @@ $ gcloud alpha builds submit --pack image=gcr.io/(gcloud config get-value projec
 ## Requirement
 
 ## Usage
+### Google Cloud Build
+Google Cloud Build process can invoke Google Cloud Buildpacks
+
+Default Builder: `gcr.io/buildpacks/builder`
+```
+$ gcloud  builds submit --pack image=gcr.io/(gcloud config get-value project)/<NAME>:<TAG>
+```
 
 ## Installation
 
