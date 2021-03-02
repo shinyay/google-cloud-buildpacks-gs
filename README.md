@@ -112,6 +112,11 @@ Paketo Builder: `gcr.io/buildpacks/builder`
 $ gcloud builds submit builder=paketobuildpacks/builder:full,image=gcr.io/(gcloud config get-value project)/<NAME>:<TAG>
 ```
 
+Artifact Registry: `<LOCATION>-docker.pkg.dev`
+```
+$ gcloud builds submit --pack image=<LOCATION>-docker.pkg.dev/(gcloud config get-value project)/<REPOSITORY>/<NAME>:<TAG>
+```
+
 ## Installation
 
 ## Licence
